@@ -4,6 +4,7 @@
 <!--
     The universal format for webpages, as well as the favicon and style sheet 
 -->
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="David Hernandez">
@@ -15,83 +16,22 @@
     
 </head>
 
-<!--
-    headers, images
--->
 <body>
-    
-        <section class="header">
-            <nav>
-                <header>
-                    <b >Online Intrusion <br>
-                    By: Group 5</b>
-                </header>
-            </nav>
-     </section>
-    
-    <figure  class="finger">
-        <img src="Images/finger.png" alt="finger pointing at you" width="220" height="175"><figcaption>Anyone can be a victim, including<b> YOU!</b></figcaption>
-    </figure>
-    <br>
-    <br>
-    <br>
-    <section class="tad">
-        <hr>
-    <h2 class="h2">What is Online Intrusions?</h2>
-    <br>
-        <p>It is an unauthorized access someone gains to your computer, typically for nefarious reasons.</p>
-        <br>
-        <br>
-        <br>
-<hr>
-        <h2>Subtopics</h2>
+    <header>
+        <a href="#" class="title">Online Intrusion</a>
+        <ul>
+            <li><a href="Pharming.html">Pharming</a></li>
+            <li><a href="botnet.html">Botnet</a></li>
+            <li><a href="PortScan.html">PortScan</a></li>
+            <li><a href="RAT.html"><abbr title="Remote Access Trojan" >RAT</abbr></a> </li>
+            <li><a href="ZeroDay.html">Zero Day</a></li>
+        </ul>
+
+    </header>
+    <section>
+        <!--<img src="Images/25336.jpg" alt="Matrix" id="Matrix"> !-->
     </section>
-
-    <!--
-        This will create links to the other webpages
-    -->
-<section class="link">
-        <aside>
-            <details>
-        <summary><a href="RAT.html">Remote Access Trojan</a></summary>
-        <p>
-            These are used to gain access to someone’s computer.
-        </p>
-        
-        </p>
-        
-    </details>
-    </aside>
-    <aside><details><summary><a href="botnet.html">Botnet</a></summary>
-        <p>
-            Floods the internet with spam and can be used without the user’s consent.</p>
-        </details>
-        </aside>
-
-            <aside>
-                <details>
-                    <summary><a href="Pharming.html">Pharming</a></summary>
-                <p>
-                    User is directed towards fake websites to extract information from them.
-                </p>
-            </details>
-            </aside>
-            <aside>
-                <details>
-                    <summary><a href="PortScan.html">Port Scan</a></summary>
-                <p>
-                    A process of scanning to see how or if ports are being used.
-                </p>
-            </details>
-            </aside>
-            <aside>
-                <details>
-                    <summary><a href="ZeroDay.html">Zero Day Attack</a></summary>
-                <p>
-                    An attack to a system upon the creation of said system, exploitation of 
-                    vulnerabilities.
-                </p>
-            </details>
-            </aside>
-        </section>
+    <canvas id="Matrix"></canvas>
+    <script src="./index.js"></script>
 </body>
+</html>
